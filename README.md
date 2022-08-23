@@ -14,7 +14,7 @@ KKRateApp is a simple Swift Package that allows you to prompt your users to revi
 #### Swift 5
 ```swift
 dependencies: [
-    .package(url: "https://github.com/devicekit/DeviceKit.git", from: "4.0.0"),
+    .package(url: "https://github.com/kaiusee/KKRateApp.git", from: "1.0"),
     /// ...
 ]
 ```
