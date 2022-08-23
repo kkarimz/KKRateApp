@@ -3,6 +3,6 @@ import XCTest
 
 final class KKRateAppTests: XCTestCase {
     func testExample() throws {
- 
+        
     }
 }
