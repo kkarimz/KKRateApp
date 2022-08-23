@@ -1,15 +1,13 @@
 
 import StoreKit
 
-public struct KKRateApp {
+struct KKRateApp {
     
-    public init() {
-    }
-    
+    /// Call this func from your main view controller in viewDidLoad to trigger app review prompt
+    /// - Parameter appLaunches: number of app launches before attempting to present the review prompt to the user, default value is 5
     static func rateAppAfter(appLaunches: Int? = 5) {
         
         let userDefaultsKey = "kkRateAppUsageCount"
-        
         var usageCount: Int = UserDefaults.standard.integer(forKey: userDefaultsKey)
         
         if usageCount > 0 {
@@ -26,6 +24,7 @@ public struct KKRateApp {
         }
     }
     
+    /// call this func from anywhere you want to attempt to launch an app review
     static func attemptAppReview() {
         if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
             SKStoreReviewController.requestReview(in: scene)

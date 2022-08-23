@@ -20,13 +20,17 @@ dependencies: [
 ```
 
 ## Usage Example
-In your AppDelegate, `didFinishLaunchingWithOptions` add the following:
+In your initial view controller add the following:
 
 ```swift
-// Call this func below with the number of times you would like to trigger the app rating 
+// Import Package
+import KKRateApp
+
+// In ViewDidLoad, Call this func below with the number of times you would like to trigger the app rating 
 KKRateMyApp.rateAppAfter(appLaunches: 5)
 ```
-Or, you can attempt to prompt the user for review manually by calling:
+
+You can also attempt to prompt the user for review manually by calling:
 
 ```swift
 KKRateMyApp.attemptAppReview()
