@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "KKRateApp",
+    platforms: [
+        .macOS(.v10_14), .iOS(.v15)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -23,6 +26,7 @@ let package = Package(
             dependencies: []),
         .testTarget(
             name: "KKRateAppTests",
-            dependencies: ["KKRateApp"]),
-    ]
+            dependencies: ["KKRateApp"])
+    ],
+    swiftLanguageVersions: [.v5]
 )
