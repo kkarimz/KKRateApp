@@ -1,7 +1,7 @@
 
 import StoreKit
 
-struct KKRateApp {
+public struct KKRateApp {
     
     /// Call this func from your main view controller in viewDidLoad to trigger app review prompt
     /// - Parameter appLaunches: number of app launches before attempting to present the review prompt to the user, default value is 5
